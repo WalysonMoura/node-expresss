@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+</head>
+<body>
+    <h1></h1>
+
+    <form action="/produtos/ediatar?__method=PUT" method="post">
+       <fieldset>
+        <legend>editado <%= produto.nome %></legend>
+        <label> nome
+            <input type="text" name="nomeProduto" id="" value="<%= produto.nome%>">
+        </label>
+        <label> preco
+            <input type="number" name="precoProduto" id="" value="<%= produto.preco %>">
+        </label>     
+        <button type="submit">Enviar</button>
+       </fieldset>
+    </form>
+</body>
+</html>
